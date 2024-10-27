@@ -30,8 +30,10 @@ Run pve-vm-info.py with options:
 -p, --passwd    PVE password
 --ssl           Use secure connection, <True|False>
 -t, --template  Search VM templates too, <True|False>
+-e, --export    Export VMs list to csv file, <True|False>
 
 Do not mix [-n], [-i] and [-a] options
+Use [-e] without [-n], [-i] and [-a] options
 ```
 
 ### Environments vars:
@@ -49,6 +51,7 @@ pve-vm-info.py -s pve1.example.lan -u viewer@pve -p YourP@ss -n VM1
 pve-vm-info.py -s pve1.example.lan -u viewer@pve -p -i 100
 pve-vm-info.py -s pve1.example.lan -a 192.168.1.2
 pve-vm-info.py -s pve1.example.lan --ssl True -t True
+pve-vm-info.py -s pve1.example.lan -e True
 ```
 
 ![img2](img2.png)
